@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout</title>
+    <link rel="shortcut icon" href="./0175-bento-grid-featured-image-medium.svg" type="image/x-icon">
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+      .div1 {
+        /* background-color: whitesmoke; */
+        padding: 5px;
+        display: grid;
+        grid-template-areas:
+          "area1 area2 area3"
+          "area4 area6 area6"
+          "area5 area6 area6";
+        grid-template-rows: 80px 80px 80px;
+        gap: 3px;
+      }
+      .item1 {
+        background-color: blueviolet;
+        grid-area: area1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .item2 {
+        background-color: palevioletred;
+        grid-area: area2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .item3 {
+        background-color: orchid;
+        grid-area: area3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .item4 {
+        background-color: orange;
+        grid-area: area4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .item5 {
+        background-color: purple;
+        grid-area: area5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .item6 {
+        background-color: green;
+        grid-area: area6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .div2 {
+        /* background-color: whitesmoke; */
+        padding: 5px;
+        display: grid;
+        grid-template-areas: 
+        "item1 item2 item2 item3"
+        "item1 item4 item5 item6"
+        "item1 item7 item8 item6";
+        grid-template-rows: 80px 80px 80px;
+        gap: 3px;
+      }
+      .p1 {
+        background-color: olive;
+        grid-area: item1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .p2 {
+        background-color: salmon;
+        grid-area: item2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .p3 {
+        background-color: deepskyblue;
+        grid-area: item3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .p4 {
+        background-color: rgb(203, 77, 98);
+        grid-area: item4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .p5 {
+        background-color: orangered;
+        grid-area: item5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .p6 {
+        background-color: violet;
+        grid-area: item6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .p7 {
+        background-color: brown;
+        grid-area: item7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .p8 {
+        background-color: rgb(49, 179, 179);
+        grid-area: item8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .div3{
+        padding: 5px;
+        display: grid;
+        grid-template-areas:
+        "some1 some2 some3 some4 some5 some6"
+        "some7 some8 some8 some4 some5 some6"
+        "some7 some8 some8 some4 some5 some6";
+        grid-template-rows: 80px 80px 80px;
+        gap: 3px;
+      }
+      .s1{
+        background-color: red;
+        grid-area: some1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .s2{
+        background-color: palevioletred;
+        grid-area: some2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .s3{
+        background-color: darkmagenta;
+        grid-area: some3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .s4{
+        background-color: darkgreen;
+        grid-area: some4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .s5{
+        background-color: blue;
+        grid-area: some5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .s6{
+        background-color: blueviolet;
+        grid-area: some6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .s7{
+        background-color: darkorange;
+        grid-area: some7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .s8{
+        background-color: gray;
+        grid-area: some8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h2{
+        text-align: center;
+        border: 2px solid;
+        box-shadow: 1px 1px 10px 0px;
+        padding: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>DIFFERENT LAYOUTS USING GRID</h2>
+    <br><br><br>
+    <div class="div1">
+      <div class="item1"></div>
+      <div class="item2"></div>
+      <div class="item3"></div>
+      <div class="item4"></div>
+      <div class="item5"></div>
+      <div class="item6"></div>
+    </div>
+  <br><br><br>
+    <div class="div2">
+      <div class="p1"></div>
+      <div class="p2"></div>
+      <div class="p3"></div>
+      <div class="p4"></div>
+      <div class="p5"></div>
+      <div class="p6"></div>
+      <div class="p7"></div>
+      <div class="p8"></div>
+    </div>
+    <br><br><br>
+    <div class="div3">
+      <div class="s1"></div>
+      <div class="s2"></div>
+      <div class="s3"></div>
+      <div class="s4"></div>
+      <div class="s5"></div>
+      <div class="s6"></div>
+      <div class="s7"></div>
+      <div class="s8"></div>
+    </div>
+  </body>
+</html>
